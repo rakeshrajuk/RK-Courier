@@ -1,0 +1,6 @@
+projectKey=Rk_Courier
+serverUrl=http://localhost:9000
+serverVersion=8.9.10.61524
+dashboardUrl=http://localhost:9000/dashboard?id=Rk_Courier
+ceTaskId=AY5-d0jzSx4gmBJQXJ2B
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AY5-d0jzSx4gmBJQXJ2B

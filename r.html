@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#errorMessage {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+    </style> -->
+</head>
+<body>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+      
+        <input type="submit" value="Submit">
+      </form>
+      <form id="myForm" onsubmit="return validateForm()">
+        <script>
+        function validateForm() {
+            // Get the values of the input fields
+            var name = document.forms["myForm"]["name"].value;
+            var email = document.forms["myForm"]["email"].value;
+            var password = document.forms["myForm"]["password"].value;
+          
+            // Validate the name field
+            if (name == "") {
+              alert("Name must be filled out");
+              return false;
+            }
+          
+            // Validate the email field
+            if (email == "") {
+              alert("Email must be filled out");
+              return false;
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+              alert("Invalid email address");
+              return false;
+            }
+          
+            // Validate the password field
+            if (password == "") {
+              alert("Password must be filled out");
+              return false;
+            } else if (password.length < 8) {
+              alert("Password must be at least 8 characters long");
+              return false;
+            }
+          
+            // If all fields are valid, return true to submit the form
+            return true;
+          }
+        </script>
+                
+
+    <!-- <form>
+        <label for="userNumber">User Number:</label>
+        <input type="text" id="userNumber" name="userNumber" required>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      
+        <button type="submit" id="submitBtn">Submit</button>
+      </form>
+      
+      <div id="errorMessage"></div>
+
+      <script>
+        const form = document.querySelector("form");
+const errorMessage = document.getElementById("errorMessage");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const userNumber = form.elements.userNumber.value;
+  const password = form.elements.password.value;
+  
+  if (isValidUserNumberAndPassword(userNumber, password)) {
+    // valid combination, submit form
+    form.submit();
+  } else {
+    // invalid combination, show error message
+    errorMessage.textContent = "Invalid user number or password.";
+  }
+});
+
+function isValidUserNumberAndPassword(userNumber, password) {
+  // Check if the user number is a string of 8 digits
+  if (!/^\d{8}$/.test(userNumber)) {
+    return false;
+  }
+
+  // Check if the password is a string of 6-12 characters and contains at least one uppercase letter, one lowercase letter, and one digit
+  if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,12}$/.test(password)) {
+    return false;
+  }
+
+  // Check if the user number and password match a predefined combination
+  if (userNumber === "12345678" && password === "Abc123") {
+    return true;
+  }
+
+  // If none of the above conditions are met, return false
+  return false;
+}
+
+      </script> -->
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking</title>
+    <link rel="stylesheet" href="RK .css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="nav">
+        <div >
+        <a style="text-decoration: none; cursor:pointer;" href="rk1.html"><img class="logo" src="logo rk-02-01.jpeg.jpg" alt=""></a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">COMPANY  <i style="font-size: small;" class="fa-solid fa-angle-down"></i></button>
+            <div class="dropdown-content">
+              <a style="text-decoration: none ; color: rgb(9, 9, 9);" href="about us.html">About Us</a>
+              <a href="#">Leadership</a>
+              <a href="#">Awards & Recognition</a>
+              <a href="#">Social Responsibility</a>
+              <a href="#">Invester Relatives</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">OUR SERVICES  <i style="font-size: small;" class="fa-solid fa-angle-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Service Vechile</a>
+              <a href="#">Industry Solutions</a>
+              <a href="#">Service Guide</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">GROWTH WITH US  <i style="font-size: small;" class="fa-solid fa-angle-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Become a Partner</a>
+              <a href="#">Ship With RK</a>
+              <a href="#">Business Inquiry</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">CAREERS  <i style="font-size: small;" class="fa-solid fa-angle-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Life At RK</a>
+              <a href="#">Join Us</a>
+             
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">CONTACT OUS  <i style="font-size: small;" class="fa-solid fa-angle-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Track Your Shipment</a>
+              <a href="#">Locate Us</a>
+              <a href="#">Customer Care</a>
+            </div>
+          </div>
+          <div>
+            <a style="text-decoration: none; color: aliceblue; cursor: pointer;" href="ship.html"><button class="button">SHIP WITH RK</button></a>
+          </div>
+          <div>
+            <a style="text-decoration: none; cursor: pointer;color: white; cursor: pointer;" href="rk1.html"><button onclick="handleClick" class="button">Home </button></a>
+          </div>
+        </div>
+
+    <div class="trackouter">
+        <div class="track">
+            <h1 >Tracking Results</h1><br>
+            <p style="font-size:large;">Get real-time delivery updates in RK Courier</p><br>
+            <p style="font-size: 18px;">To track your consignment please enter any combination of up to 10 RK tracking numbers, seperated by comma:</p><br><br>
+            <input type="radio" name="track">AWB/ CONSIGNMENT NUMBER
+            <input style="margin-left: 80px;" type="radio" name="track">REFERENCE NUMBER <br><br><br>
+            <input class="refnum" type="text" name="" id="input" placeholder="Enter Number"><br>
+            <p id="ermessage" style="color: red;"></p><br>
+
+            <p style="text-decoration: none; color:white; cursor:pointer;" href="track history.html"><button onclick="tracknum()" class="button19"><h3>Track</h3></button></a><br><br>
+        </div>
+
+        <img class="img15" src="d.png.jpg" alt="">
+
+    </div>
+   
+
+
+
+<footer>
+    <div class="footer12">
+        
+            <div>
+                Email:customersupport@rk.com <br><br>
+                Phone : +91- 9740744074 <br><br>
+                Follow Us on : <br><br>
+                <i style="font-size: xx-large;" class="fa-brands fa-facebook"></i>
+                <i style="font-size: xx-large;"class="fa-brands fa-linkedin"></i>
+                <i style="font-size: xx-large;" class="fa-brands fa-youtube"></i>
+                <i style="font-size: xx-large;" class="fa-brands fa-square-instagram"></i>
+                <i style="font-size: xx-large;" class="fa-brands fa-square-twitter"></i>
+            
+            </div>
+    
+            <div>
+                <h4>COMPANY <hr></h4><br>
+                About Us <br><br>
+                Awards & Recognition <br><br>
+                Corp. Social Responsibility
+            </div>
+            <div>
+                <h4>SHIP WITH US <hr></h4><br>
+                Book a Shipment <br><br>
+                Track a Shipment <br><br>
+                Business Inquiry
+            </div>
+            <div>
+                <h4>HELP & SUPPORT <hr></h4><br>
+                Email Us <br><br>
+                Locate Us <br><br>
+                Customer Care
+            </div>
+            <div>
+                <h4>SELF SERVICE PORTEL <hr></h4><br>
+                Customer Login <br><br>
+                Employee Login <br><br> 
+                Channel Partner Login
+            </div>
+        
+    </div>
+    
+    
+    
+    
+    <div class="footer3">
+    <div >
+         © RK Express Limited, All Rights Reserved.
+    </div>
+    <div class="footer3inner">
+        Terms of Use <i class="fa-solid fa-angle-right fa-2xs"></i> Privacy Policy
+    </div> 
+    </div>
+    
+    
+    </footer>
+
+    <script src="RK courier.js"></script>
+
+    <!-- <script>
+
+      const input=document.querySelector('#input');
+      const btn =document.querySelector('#btn')
+      
+      input.addEventListener("input",()=>{
+        if(input.value==="050319993546"){
+          btn.disabled=false
+        }else{
+          btn.disabled=true
+        }
+      })
+    </script> -->
+    
+</body>
+</html>
